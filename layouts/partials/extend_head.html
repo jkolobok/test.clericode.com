@@ -4,8 +4,11 @@
         const firstScriptElement = doc.getElementsByTagName("script")[0]
         const scriptElement = doc.createElement("script")
         scriptElement.async = true
-        scriptElement.src = "//cdn.snoska.media/script.js?id=" + site_id
+        scriptElement.setAttribute("type","module")
+        scriptElement.src = "http://app.snoska.media:5000/snoska-marker.js?id=" + site_id
         firstScriptElement.parentNode.insertBefore(scriptElement, firstScriptElement)
-    })(document, "12341234123412341234")
+    })(document, "0e4fa451840c4adc8fd59c58c91417b8")
 </script>
 <!-- /Snoska.Media marker -->
+
+<!--<script type=module src='http://127.0.0.1:5500/snoska-marker.js?id=0e4fa451840c4adc8fd59c58c91417b8'></script>-->
